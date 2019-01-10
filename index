@@ -1,0 +1,10 @@
+var x = [+3, +3, +4, -2, -4];
+var n = 0;
+var arr = [];
+for (i = 0; i < x.length; i++){
+  n+=x[i];
+  arr.push(n);
+}
+
+document.write("total count " + n + "<br>");
+document.write("Number order " + arr);
