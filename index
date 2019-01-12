@@ -15,18 +15,21 @@ math();
 var o = 0;
 var p = 1;
 
+
+for (o; o < arr.length; o++){
   for (p; p < arr.length; p++){
-    if (arr[o] === comp[p]){
-      
+    if (arr[o] === comp[p]){   
       document.write("Match found ")
       break;
     } else {
       document.write(arr[o] + " does not match " + comp[p] + ".  | ")
     }
   }
+  document.write("<br> ");
+}
 
 
 
 
 
-document.write(arr);
+document.write("<br> <br> Value is array" + arr);
