@@ -12,24 +12,26 @@ for (i = 0; i < x.length; i++){
 }
 math();
 
-var o = 0;
-var p = 1;
 
-
-for (o; o < arr.length; o++){
-  for (p; p < arr.length; p++){
-    if (arr[o] === comp[p]){   
-      document.write("Match found ")
+for (o = 0; o < arr.length; o++){
+  for (p = 1; p < arr.length; p++){
+    
+    
+    if (arr[o] === comp[p]){
+      document.write("Match found " + arr[o] + " matches " + comp[p]);
       break;
     } else {
-      document.write(arr[o] + " does not match " + comp[p] + ".  | ")
+      document.write(arr[o] + " does not match " + comp[p] + ".  | ");
+      
     }
   }
-  document.write("<br> ");
+  document.write("<br>");
+  
+  
+
 }
 
+document.write("<br> <br> Value is array " + arr + "<br><br>");
 
 
 
-
-document.write("<br> <br> Value is array" + arr);
