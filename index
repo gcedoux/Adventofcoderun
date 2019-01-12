@@ -1,10 +1,32 @@
-var x = [+3, +3, +4, -2, -4];
+var x = [+3, +3, +4, -2, -4, +6];
 var n = 0;
 var arr = [];
+var comp = [];
+
+function math(){
 for (i = 0; i < x.length; i++){
   n+=x[i];
   arr.push(n);
+  comp.push(n);
 }
+}
+math();
 
-document.write("total count " + n + "<br>");
-document.write("Number order " + arr);
+var o = 0;
+var p = 1;
+
+  for (p; p < arr.length; p++){
+    if (arr[o] === comp[p]){
+      
+      document.write("Match found ")
+      break;
+    } else {
+      document.write(arr[o] + " does not match " + comp[p] + ".  | ")
+    }
+  }
+
+
+
+
+
+document.write(arr);
