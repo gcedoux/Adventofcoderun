@@ -1,4 +1,4 @@
-var x = [+3, +3, +4, -2, -4, +6];
+var x = [+3, +3, +4, -2, -4, +6,];
 var n = 0;
 var arr = [];
 var comp = [];
@@ -14,24 +14,22 @@ math();
 
 
 for (o = 0; o < arr.length; o++){
-  for (p = 1; p < arr.length; p++){
+  for (p = 1; p < comp.length; p++){
     
     
     if (arr[o] === comp[p]){
       document.write("Match found " + arr[o] + " matches " + comp[p]);
       break;
     } else {
-      document.write(arr[o] + " does not match " + comp[p] + ".  | ");
+      document.write("");
       
     }
   }
-  document.write("<br>");
+  comp.shift();
+ 
   
   
 
 }
 
 document.write("<br> <br> Value is array " + arr + "<br><br>");
-
-
-
