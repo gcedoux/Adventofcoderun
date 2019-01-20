@@ -16,4 +16,3 @@ while (i < startF.length) {
 	 i++
 	 }
 	 
-	 startF.push(startF[i]);
