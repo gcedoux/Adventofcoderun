@@ -1,44 +1,19 @@
-var x = [-6, +3, +8, +5, -6];
-var n = 0;
+var startF = [+3, +3, +4, -2, -4];
 var arr = [];
-var comp = [];
-
-function math(){
-for (i = 0; i < x.length; i++){
-  n+=x[i];
-  arr.push(n);
-  comp.push(n);
-}
-}
-math();
+var s = 0;//holds the frequency
+var i = 0;
 
 
-var l = 2;
-function compare(){
-for (o = 1; o < arr.length; o++){
-  for (p = l; p < comp.length; p++){
-       if (arr[o] === comp[p]){
-      document.write("Match found " + arr[o] + " matches " + comp[p] + "<br>"); return true;
-    }  
-  } l++;
-}
-}
-
-function isittrue(){
-if (compare() === true){
-  document.write("<br> Match was found");
-  return true;
-} else {   
-   l = 2;
-  return false;
-  }
-}
-
-while (isittrue() === false){
-  math();
-  compare();
-  
-}
-
-
-//document.write("<br> array " + arr + "<br>  array " + comp);
+while (i < startF.length) {
+	s+=startF[i];
+	if (arr.includes(s) === true){
+	 document.write("match found with number " + s);
+	 break;
+	 } else {document.write("");
+	 arr.push(s);
+   startF.push(startF[i]);
+	 }
+	 i++
+	 }
+	 
+	 startF.push(startF[i]);
