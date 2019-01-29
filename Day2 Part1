@@ -1,0 +1,18 @@
+var id = ["bababc"];
+var l = id[0].split("");
+var k = id[0].split("");
+document.write(l);
+var t = 1;
+
+for (i = 0; i < l.length; i++){
+  for (j = t; j < l.length; j++){
+      document.write("<br>" + l[i] + l[j]);
+    if (l[i] === l[j]) {
+      document.write(" <br> matches " + l[i] + " and " + l[j] + " round " + j);
+    }
+} t++;
+}
+
+
+document.write("<br>" + l);
+document.write("<br>" + k);
