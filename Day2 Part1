@@ -1,18 +1,19 @@
-var id = ["bababc"];
-var l = id[0].split("");
-var k = id[0].split("");
-document.write(l);
+var boxId = ["jiwamotqgcfnudclzbyxkzmrvp"];
+var boxIdFirstSplit = boxId[0].split("");
+var boxIdSecondSplit = boxId[0].split("");
+
+var o = 1;
 var t = 1;
 
-for (i = 0; i < l.length; i++){
-  for (j = t; j < l.length; j++){
-      document.write("<br>" + l[i] + l[j]);
-    if (l[i] === l[j]) {
-      document.write(" <br> matches " + l[i] + " and " + l[j] + " round " + j);
+
+for (i = 0; i < boxIdFirstSplit.length; i++){
+  for (n = t; n < boxIdFirstSplit.length; n++){
+    document.write("<br>" + boxIdFirstSplit[i] + boxIdSecondSplit[n])
+    if (boxIdFirstSplit[i] === boxIdSecondSplit[n]){
+      boxIdFirstSplit.splice(i,1);
     }
-} t++;
+  }t++
 }
 
 
-document.write("<br>" + l);
-document.write("<br>" + k);
+document.write("<br>" + boxIdFirstSplit + "<br>" + boxIdSecondSplit);
