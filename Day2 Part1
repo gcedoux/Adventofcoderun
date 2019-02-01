@@ -17,3 +17,22 @@ for (i = 0; i < boxIdFirstSplit.length; i++){
 
 
 document.write("<br>" + boxIdFirstSplit + "<br>" + boxIdSecondSplit);
+
+
+
+
+
+///
+var boxId = ["ababab"];
+var boxIdFirstSplit = boxId[0].split("");
+var x = [];
+
+
+for (i = 0; i < boxIdFirstSplit.length; i++){
+if (x.includes(boxIdFirstSplit[i]) == false){
+x.push(boxIdFirstSplit[i])
+}
+}
+
+
+document.write(x);
