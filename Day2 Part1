@@ -23,16 +23,16 @@ document.write("<br>" + boxIdFirstSplit + "<br>" + boxIdSecondSplit);
 
 
 ///
-var boxId = ["ababab"];
+var boxId = ["ababab","abcccd"];
 var boxIdFirstSplit = boxId[0].split("");
-var x = [];
+var newBoxId = [];
 
 
 for (i = 0; i < boxIdFirstSplit.length; i++){
-if (x.includes(boxIdFirstSplit[i]) == false){
-x.push(boxIdFirstSplit[i])
+if (newBoxId.includes(boxIdFirstSplit[i]) == false){
+newBoxId.push(boxIdFirstSplit[i])
 }
 }
 
 
-document.write(x);
+document.write(newBoxId);
