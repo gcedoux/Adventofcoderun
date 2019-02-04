@@ -36,3 +36,69 @@ newBoxId.push(boxIdFirstSplit[i])
 
 
 document.write(newBoxId);
+
+
+////
+
+var boxId = ["ab","cd","ef"];
+var newBoxId = [];
+var counter = 0;
+var exTwo = 0;
+var exThree = 0;
+var test = [];//holds values if 2 or 3 are found
+var test2 = [];//holds a value of 2 or 3 after duplicates in test have been removed
+
+var boxNumber = 0;
+var boxIdFirstSplit = boxId[boxNumber].split("");
+
+//This loop removes the duplicate array values
+for (i = 0; i < boxIdFirstSplit.length; i++){
+if (newBoxId.includes(boxIdFirstSplit[i]) == false){
+newBoxId.push(boxIdFirstSplit[i])
+}
+}
+
+
+
+for (check = 0; check < boxId.length; check++){
+  
+for (i = 0; i < newBoxId.length; i++){
+  for (l = 0; l < boxIdFirstSplit.length; l++){
+      document.write(newBoxId[i] + boxIdFirstSplit[l] + "<br>");
+    if (newBoxId[i] === boxIdFirstSplit[l]){
+      //document.write("<br> match found" + newBoxId[i] + boxIdFirstSplit[l])
+  counter++;
+    }
+  } 
+    if (counter === 3){
+    //document.write(" match of 3 found <br>");
+    test.push("3");
+  } else if (counter === 2){
+    //document.write("match of 2 found <br>");
+    test.push("2");
+  }     
+counter = 0;//count returns to 0 after every run through
+  
+} newBoxId = [];
+  test = [];
+  test2 = [];
+  document.write("round " + boxNumber);
+  boxNumber++;
+}
+
+for (o = 0; o < test.length; o++){
+if (test2.includes(test[o]) === false){
+test2.push(test[o])
+}
+}
+if (test2.includes("3")){
+  exThree++;
+} 
+if (test2.includes("2")){
+  exTwo++;
+}
+
+
+
+
+document.write("<br>"+ boxNumber);
