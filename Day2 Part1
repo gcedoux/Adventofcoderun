@@ -1,46 +1,4 @@
-var boxId = ["jiwamotqgcfnudclzbyxkzmrvp"];
-var boxIdFirstSplit = boxId[0].split("");
-var boxIdSecondSplit = boxId[0].split("");
-
-var o = 1;
-var t = 1;
-
-
-for (i = 0; i < boxIdFirstSplit.length; i++){
-  for (n = t; n < boxIdFirstSplit.length; n++){
-    document.write("<br>" + boxIdFirstSplit[i] + boxIdSecondSplit[n])
-    if (boxIdFirstSplit[i] === boxIdSecondSplit[n]){
-      boxIdFirstSplit.splice(i,1);
-    }
-  }t++
-}
-
-
-document.write("<br>" + boxIdFirstSplit + "<br>" + boxIdSecondSplit);
-
-
-
-
-
-///
-var boxId = ["ababab","abcccd"];
-var boxIdFirstSplit = boxId[0].split("");
-var newBoxId = [];
-
-
-for (i = 0; i < boxIdFirstSplit.length; i++){
-if (newBoxId.includes(boxIdFirstSplit[i]) == false){
-newBoxId.push(boxIdFirstSplit[i])
-}
-}
-
-
-document.write(newBoxId);
-
-
-////
-
-var boxId = ["ab","cd","ef"];
+var boxId = ["jiwamotqgcfnudclzbyxkzmrvp","jiwamotqgsfnidcvzpyxkhervp","jiwamotqgsqnjdclzbyxkaervp","jiwamotqgsvnudclzbvikhervp","jiwamotqgjfnuqclzbyxkhemvp","jifamotqgsfnudclzbyxohecvp","jiwamotqssfnudclzjyxkhekvp","jiramotqgsfnudclzbyxztervp","jiwamotqgsfnuddozbyxjhervp","jiwamohqgsfntdclzxyxkhervp","jfwamobqgsfnudzlzbyxkhervp","fiwamotqgsfnudcfzbyfkhervp","jiwamothgsonudclzbyxkhcrvp","jinamojqgsftudclzbyxkhervp","jiwamotbgsfnudclzpyxchervp","wiwaiotqgsfnudhlzbyxkhervp","jiwamotqgsfktdclzbyxlhervp","jimamokqgsfnudclzbyokhervp","jiwqmotqgyfnudcdzbyxkhervp","ziwvmotqgsfnusclzbyxkhervp","jiwamotqgsfnuzclpbyxkherip","jiwumotqgsfnudclzgyxkhedvp","jiwomocqgsfnudylzbyxkhervp","jtwamotqgxfnudwlzbyxkhervp","jiwamotqgsfnudclzbnvkherva","jiwaxoeqgsfnsdclzbyxkhervp","jiwamotqgsrnudclzbyxkoekvp","jiwamotqgsfnudclzbynkhorvr","jiwavotqgsfxudclzbmxkhervp","jiwamotqksfnudcvzbytkhervp","qiwamotqgsfnadwlzbyxkhervp","jiwamctqgsfnwdclzhyxkhervp","jiwamotqggfnudclzbyxqwervp","jiwamdtqgslnurclzbyxkhervp","jiwamozqgsfnupclobyxkhervp","jiwamotqgtfnudcbzbypkhervp","jiwnmotqgsfnudclmbybkhervp","jihamotqgsfnudclzbyxkhsivp","jiwamotqgsfcudclzbyxkxervz","jiwamotqgsfhwdclzbyxkfervp","jivamotqgsfnudclzbixkpervp","jiwamotagsfrudclzbyzkhlrvp","jiwamotqgsfnudclzbdxkhbrvh","jfwamotsasfnudclzbyxkhervp","jiwrmotqgsfnudclzbyxgherkp","jiwomotqisfnudcbzbyxkhervp","jiermotqgsfjudclzbyxkhervp","jiwamotqgsfeudcpzbyxkmervp","jxwpmotqgsfnufclzbyxkhervp","jiwamotqgsfnunclzpyxkhecvp","jpwamotqvsfnudclzbyxkhprvp","jimamothgsfnudclzbjxkhervp","jiwamotqgsfnudclzbybkhewvc","jiwqmotqgsfnudclzbyrkheovp","jiwapotqgsfnudblzbyxkhsrvp","jiwhmotqgsfaudclzbyakhervp","jiqamotjgsfnudclzbyxphervp","jiwamotqgsfnudklzbyeghervp","jowamotqgsfnudcljbyxshervp","jiwamotxgkfnudclzbyskhervp","jifamotqgsfnudclzbyxklprvp","jiwamotqgsfnudclzbghkherep","jiwamotygsfnudcezbyxkheovp","jiwmmhtqgsfnudclzhyxkhervp","fiwxmotqgsfnudclzbwxkhervp","jvwapotwgsfnudclzbyxkhervp","jiwamodqgsfnudcizbtxkhervp","jiwamotqgsfnhnclzbyxkwervp","jiwsmozqgsfnudclzbyxkwervp","jwwamotqgsxnudclzbyxkpervp","jiwamotqgsftudclzbcckhervp","jiwaootqgnfnudclzbrxkhervp","aicamotqgsfnudclzbyxklervp","jilamolqgsfnudclzbyxknervp","jiwamotqgqftudcczbyxkhervp","jiwmmntqgsfnudclzbyxkhewvp","dxwamotqgsfnudclzbyxkhervn","imwamotqgsfnudclzbyxkhervv","jiwammtqgsfnudcrzsyxkhervp","jiwamojqgsznuuclzbyxkhervp","bisamotqgsqnudclzbyxkhervp","jiwaootqksfyudclzbyxkhervp","jiwamotqgscnudclzbyskhervs","jiwamltqgsfnudhlzbyxkhervh","jiwemotggsfnuuclzbyxkhervp","jiwamotqgsfnudclzbexkheoxp","jiwayotqgfffudclzbyxkhervp","jywamotqgsftudclzbyxkherxp","viwamotqgdfnudcfzbyxkhervp","jioamotvgsfnudclwbyxkhervp","jiwomotqgsflurclzbyxkhervp","jiwamotqgsfnudclzbyckhernh","jiwarobqosfnudclzbyxkhervp","jiwamotqgsfnudclbbyzkkervp","jiwamvtqgsfwudclzbyxkhetvp","jtwavotdgsfnudclzbyxkhervp","jiwamotqzsjnydclzbyxkhervp","jiwamotqgsfnrdctzbyxkxervp","jiwamotqgsfnudclzbyxehezyp","jiwamftqgsfcudclqbyxkhervp","jiwnmotqgssnudclzbyxkherbp","jidgmotqgsfnbdclzbyxkhervp","biwamotqgnfnudclzbyxkhervc","jizamotqxffnudclzbyxkhervp","jiwamztqgsfnudclzbyxkhevvi","jmwamotqgsfnudclzbtwkhervp","jxwamotqgsfkudchzbyxkhervp","jiwamotqgspqudclzbyxkhervl","jiyagoxqgsfnudclzbyxkhervp","jawamotqgsfnudllzbyxkhervr","jfwamotqgsxnudclzbyxklervp","juaametqgsfnudclzbyxkhervp","jiwamotqgsfnudcrybyxkhnrvp","jiwamotqgsfnudclfbmxkheovp","jiwamotqgsfnukclzbykkhervz","jwwamztqgsfnudclzbyxkhervt","jiwamotqgsbnudclzbyxkhkrvu","jewamotqgsfnuqclzbyxkherve","jiwamotqgsfntdblrbyxkhervp","jiwamotqgsfoudclzbyxcherwp","jiwamopqgscnudclzbyxkhrrvp","jiwamotqosfnudclkbyxyhervp","jiwamotqysfnudclzbyxqhermp","jiwamotqgsfnuscbzbyzkhervp","jiwamotqgofnudflgbyxkhervp","jvwamotqgefnydclzbyxkhervp","jjwamotqgsfnudclzbkxkhetvp","jiwasctqcsfnudclzbyxkhervp","jiwamotqgsfnudcqzbyxkherxf","jiwamotqgsgnudclzbtxkherip","jiwamotqksfnudflzbyxkhervf","jixamotqgsfnudclzbyxklerzp","jkwamatqgsfnudcmzbyxkhervp","wiwamotqcsfnudclzbyxkhervu","jiwahotqgsfnudclzbyxqjervp","juhamotqdsfnudclzbyxkhervp","jiwamotqqsfnudclzryxkherfp","vfwazotqgsfnudclzbyxkhervp","jicamoaqgsfnudclzbyxkherup","jiwqmogqxsfnudclzbyxkhervp","xiwamotqgsfnudclybyxkhurvp","jiwamitqgssnudclzbpxkhervp","jiwamotqgstnudqlzbyxkhrrvp","jiwamctqgsfnuwclzbfxkhervp","jiwzmotqgsfnuhclzbyxkhwrvp","hiwamotqgsfmudclzbykkhervp","jiwamotqgsrnudclzbyxohnrvp","jswametqgsfcudclzbyxkhervp","jiwamotqgsfsudcazeyxkhervp","jiwamotqgsfnqdctzbyxkherjp","jhwamotqgsfnudclgbyxkhervw","jiwamotqgsxnudglzbyxkhermp","jiwamotqgsfnudclabjxkrervp","jiwamotqbsrnudclpbyxkhervp","jiqamotugsfnudcrzbyxkhervp","jiwamotqgsfnuwdazbyxkhervp","jiwamctqghwnudclzbyxkhervp","siwamotqgsznudclzbyxghervp","jiwamotdgsfrudclcbyxkhervp","jiwamotqgsfnddylzbyxkhelvp","jiwqmotqgjfnudclzbyxkhervd","jiwamotogffvudclzbyxkhervp","jiwawhtqgsfnudclzbyxkhervi","jiwomotqgsfnulclzjyxkhervp","diwamotqgsfnudclzbypkhervk","jiwamotqgsfqtsclzbyxkhervp","jiwgmotqgsfnudcwzbyxkhnrvp","jiwamotqksfnvdclzbyxkherve","jiwamztqgsfnusxlzbyxkhervp","hiwamotqgssnudclibyxkhervp","jiwamotzgsfnudclzbyxxhemvp","jiwamotqgsfrudclzbyzkhlrvp","jiwaaotqgsfnudcazbyxkhervf","jiwadotqgsffudclzbyxkhbrvp","jieamotqgafnudclzbyxknervp","jieamotqgsfnudclzjyxjhervp","jvwamotqglfnudclzbyxkhxrvp","jiwamotqgsfnudcozdyxkhdrvp","riwamocqgsfnudclzbtxkhervp","jiwawitqgsfnudclzbyxkhlrvp","giwamotqgsfvudclzayxkhervp","jiwamotqgsfnddcjzjyxkhervp","jiwamotpgrfnxdclzbyxkhervp","jiwamotkgnfnubclzbyxkhervp","jiwamokqgsfnukclzbyxkservp","jiwamotqgyfnudzlqbyxkhervp","jiwamotqgsonudclzbyxhhwrvp","iiwamotqgsfnudclzbvxkhemvp","jxwamotogsfnudclzbyxkhervh","jiwkmocqgsfnudclzbyxkhervg","jiwymotzgsfnudclvbyxkhervp","jiwatotqgsfaudcvzbyxkhervp","jiwamotkgsfnudclzbyckhsrvp","jiwamotqgsfiuyklzbyxkhervp","jiwamotqgsfnudclzmyakiervp","jiwamotqgsfnidcyzbyxfhervp","jiwakotqgsfnudclzbaukhervp","jixadotqgsfnudglzbyxkhervp","jiwamotqnsfnudclrbyxkhemvp","jiwamotqgsfnhdtlzbyxuhervp","jiwamotqlsfnudcyzbyxkhervu","jiwamotqgsfnuxclxbyxkheryp","jiwamotqgafnudflhbyxkhervp","jicamotqgsfnufcqzbyxkhervp","jiwamotqgsmnudcszbyxfhervp","jiwamotqgsfnudclzryxkjekvp","jiwamocqgsfnudflzayxkhervp","jiwomotqgsfaudclzkyxkhervp","niwamoaqgsfnuyclzbyxkhervp","jiwamogqdsfnudcvzbyxkhervp","jiwamotbgsfnudclhbyxehervp","jiwamdtqgsfnudclzbyxdhergp","jiwamotqgofnudclzbyxkhcrjp","jhfamotqgsfnudclzbyxkherjp","jiwqmotqgsfkudclzbixkhervp","jdfametqgsfnudclzbyxkhervp","jioamotqgrfnudclzbqxkhervp","jiwamotqgornudclzbyxkheavp","jlwarotqgsfbudclzbyxkhervp","jiwamyyqgsfnudclzbyxkhorvp","piwamotqgsfnudclnbmxkhervp","jiwvmotqgsfnudnlzbyxshervp","jiwamotqjsfnudclzbytkhenvp","wswamotqgsfnudcfzbyxkhervp","jiwamotqgsftddclrbyxkhervp","jiwamytqgsfnudclzbyxkhwrzp","jiwamotqgsfnudcbzayxkmervp","jiykmokqgsfnudclzbyxkhervp","jiwamotqqsxnudclzbixkhervp","jiwamotqgsfnubclzboxihervp","jiwsmottgsfnudclzbrxkhervp","jiwamotqgsfnudcgzbexkherjp","juwamotqgsfnudclzcyvkhervp","jiwamotqglfcudcdzbyxkhervp","jiwamotqgsftudclzbynkhevvp","jiwamotdlzfnudclzbyxkhervp","jiwamohqgsfnuyclzbyxkhervk","jiwamodygsanudclzbyxkhervp","jiwamotqgsfnujclzbyxrhewvp","jicamotqgsfnudcmzbyhkhervp","jiwamvtqgvfnudclzayxkhervp","jiwamotqgsfnuzclzfyxkhevvp","jiwafotqgsfnudcejbyxkhervp","jiwamomqgyfnudclzbyzkhervp","jiqamorqgsfnudclqbyxkhervp","jiwamotqgsfpudclzbyxkkvrvp","jiwamotqgsfnuiclzbyxhherfp","jiwagotqgsfoudclzbyxkdervp","jiwamotmgmfnudclzbyxkhermp","jltamotqgsfnudctzbyxkhervp"];
 var newBoxId = [];
 var counter = 0;
 var exTwo = 0;
@@ -49,27 +7,33 @@ var test = [];//holds values if 2 or 3 are found
 var test2 = [];//holds a value of 2 or 3 after duplicates in test have been removed
 
 var boxNumber = 0;
-var boxIdFirstSplit = boxId[boxNumber].split("");
 
-//This loop removes the duplicate array values
-for (i = 0; i < boxIdFirstSplit.length; i++){
-if (newBoxId.includes(boxIdFirstSplit[i]) == false){
-newBoxId.push(boxIdFirstSplit[i])
+function dup(){//function to remove boxID duplicate values
+for (l = 0; l < boxIdFirstSplit.length; l++){
+if (newBoxId.includes(boxIdFirstSplit[l]) == false){
+newBoxId.push(boxIdFirstSplit[l])
 }
 }
+}
 
 
-
-for (check = 0; check < boxId.length; check++){
+for( i = 0; i < boxId.length; i++){
+  test = [];
+  test2 = []; 
+  newBoxId = [];
+  boxIdFirstSplit = boxId[i].split("");
+dup();
   
-for (i = 0; i < newBoxId.length; i++){
-  for (l = 0; l < boxIdFirstSplit.length; l++){
-      document.write(newBoxId[i] + boxIdFirstSplit[l] + "<br>");
-    if (newBoxId[i] === boxIdFirstSplit[l]){
-      //document.write("<br> match found" + newBoxId[i] + boxIdFirstSplit[l])
-  counter++;
+for (n = 0; n < newBoxId.length; n++){  
+  
+   for (l = 0; l < boxIdFirstSplit.length; l++){
+      //document.write(newBoxId[n] + boxIdFirstSplit[l] + "<br>");
+    if (newBoxId[n] === boxIdFirstSplit[l]){
+      //document.write("<br> match found" + newBoxId[i] + boxIdFirstSplit[l] + counter)
+      counter++;
     }
   } 
+  
     if (counter === 3){
     //document.write(" match of 3 found <br>");
     test.push("3");
@@ -78,14 +42,13 @@ for (i = 0; i < newBoxId.length; i++){
     test.push("2");
   }     
 counter = 0;//count returns to 0 after every run through
-  
-} newBoxId = [];
-  test = [];
-  test2 = [];
-  document.write("round " + boxNumber);
-  boxNumber++;
-}
 
+}
+  //test = [];
+  //test2 = [];
+  
+  //newBoxId = [];
+  //document.write(newBoxId +  "<br>");  
 for (o = 0; o < test.length; o++){
 if (test2.includes(test[o]) === false){
 test2.push(test[o])
@@ -96,9 +59,10 @@ if (test2.includes("3")){
 } 
 if (test2.includes("2")){
   exTwo++;
+} //document.write("<br>" + newBoxId + "<br>"  + boxIdFirstSplit)
 }
 
 
 
 
-document.write("<br>"+ boxNumber);
+  document.write("<br> matches of two " + exTwo + ". matches of three " + exThree + " Math " + exTwo*exThree);
