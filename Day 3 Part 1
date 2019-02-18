@@ -2,8 +2,6 @@ var elfList = ["#123 @ 3,2: 5x4","#2 @ 3,1: 4x4"];
 //var elf = elfList[0];
 
 
-
-
 function removeExtraValues(elf){
 //Remove extra values and collect the cordinates as well as the inch input
 var firstArraySplit = elf.split(" ");//splits the array
@@ -24,11 +22,39 @@ var secondInch = findX[1];//holds the second sq inch number
 document.write("<br> xCord: " + xCord );
 document.write("<br> yCord: " + yCord );
 document.write("<br> first inch number: " + firstInch );
-document.write("<br> second inch number: " + secondInch );  
+document.write("<br> second inch number: " + secondInch ); 
+  
+//showElfInchList();
+  hello();
 }
 
+
+function hello(){
+  document.write("test");
+}
+
+function showElfInchList(){
+var id1 = xCord;
+var id2 = yCord;
+
+var sq1 = firstInch;
+var sq2 = secondInch;
+
+var t = sq1+id1;
+
+function test(id1, id2){
+for (i = 0; i < sq2; i++){
+  document.write("<br>");
+  
+  for (l = id1; l < t; l++){
+    document.write(l + "," + id2 +" ");  
+  } id2++;
+}
+}
+
+test(id1,id2);
+}
 
 for (i = 0; i < elfList.length; i++){
 removeExtraValues(elfList[i]);
 }
-
