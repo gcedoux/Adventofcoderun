@@ -1,0 +1,34 @@
+var elfList = ["#123 @ 3,2: 5x4","#2 @ 3,1: 4x4"];
+//var elf = elfList[0];
+
+
+
+
+function removeExtraValues(elf){
+//Remove extra values and collect the cordinates as well as the inch input
+var firstArraySplit = elf.split(" ");//splits the array
+var findAt = firstArraySplit.indexOf("@");//locates where @ is in the string
+var removeAllbeforeAt = firstArraySplit.splice(0, findAt+1);//removes @ and values before @
+var joinFirstArraySplit = firstArraySplit.join(" ");//rejoins array into a string so it can be split again
+var findComa = joinFirstArraySplit.split(",")//splits input at the , so that we can sepearate x and y cord
+var xCord = findComa.splice(0,1);//sets the X cord
+var joinSecondArraySplit = findComa.join(" ");//joins the array to be split again
+var findColon = joinSecondArraySplit.split(":");//splits between the : cordinate
+var yCord = findColon.splice(0,1);//holds the y cordinate
+var joinThirdArraySplit = findColon.join(" ");//joins the array to be split again
+var findX = joinThirdArraySplit.split("x")//splits the array between X
+var firstInch = findX[0];//holds the initial sq inch number
+var secondInch = findX[1];//holds the second sq inch number  
+  
+//document.write(elf);
+document.write("<br> xCord: " + xCord );
+document.write("<br> yCord: " + yCord );
+document.write("<br> first inch number: " + firstInch );
+document.write("<br> second inch number: " + secondInch );  
+}
+
+
+for (i = 0; i < elfList.length; i++){
+removeExtraValues(elfList[i]);
+}
+
