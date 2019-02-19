@@ -1,6 +1,6 @@
-var elfList = ["#123 @ 3,2: 5x4","#2 @ 3,1: 4x4"];
+var elfList = ["#2 @ 3,1: 4x4","#2 @ 3,1: 4x5"];
 //var elf = elfList[0];
-
+var y = [];
 
 function removeExtraValues(elf){
 //Remove extra values and collect the cordinates as well as the inch input
@@ -9,52 +9,47 @@ var findAt = firstArraySplit.indexOf("@");//locates where @ is in the string
 var removeAllbeforeAt = firstArraySplit.splice(0, findAt+1);//removes @ and values before @
 var joinFirstArraySplit = firstArraySplit.join(" ");//rejoins array into a string so it can be split again
 var findComa = joinFirstArraySplit.split(",")//splits input at the , so that we can sepearate x and y cord
-var xCord = findComa.splice(0,1);//sets the X cord
+xCord = findComa.splice(0,1);//sets the X cord
 var joinSecondArraySplit = findComa.join(" ");//joins the array to be split again
 var findColon = joinSecondArraySplit.split(":");//splits between the : cordinate
-var yCord = findColon.splice(0,1);//holds the y cordinate
+yCord = findColon.splice(0,1);//holds the y cordinate
 var joinThirdArraySplit = findColon.join(" ");//joins the array to be split again
 var findX = joinThirdArraySplit.split("x")//splits the array between X
-var firstInch = findX[0];//holds the initial sq inch number
-var secondInch = findX[1];//holds the second sq inch number  
+firstInch = findX[0];//holds the initial sq inch number
+secondInch = findX[1];//holds the second sq inch number  
   
 //document.write(elf);
 document.write("<br> xCord: " + xCord );
 document.write("<br> yCord: " + yCord );
 document.write("<br> first inch number: " + firstInch );
 document.write("<br> second inch number: " + secondInch ); 
+
+xCordinate = parseInt(xCord);
+yCordinate = parseInt(yCord); 
+firstInchCord = parseInt(firstInch);
+secondInchCord = parseInt(secondInch);
   
-//showElfInchList();
-  hello();
+showElfInchList();
+ //var t = firstInchCord+xCordinate;  
+
 }
 
-
-function hello(){
-  document.write("test");
-}
 
 function showElfInchList(){
-var id1 = xCord;
-var id2 = yCord;
-
-var sq1 = firstInch;
-var sq2 = secondInch;
-
-var t = sq1+id1;
-
-function test(id1, id2){
-for (i = 0; i < sq2; i++){
-  document.write("<br>");
-  
-  for (l = id1; l < t; l++){
-    document.write(l + "," + id2 +" ");  
-  } id2++;
+var t = firstInchCord+xCordinate;  
+for (p = 0; p < secondInchCord; p++){
+  document.write("<br>"); 
+  for (l = xCordinate; l < t; l++){
+    document.write(l + "," + yCordinate +" "); 
+    y.push(l+","+yCordinate);
+  } yCordinate++;
 }
 }
 
-test(id1,id2);
-}
 
 for (i = 0; i < elfList.length; i++){
 removeExtraValues(elfList[i]);
 }
+
+
+document.write("<br>" + y[1]);
