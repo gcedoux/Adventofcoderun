@@ -1,6 +1,11 @@
-var elfList = ["#2 @ 3,1: 4x4","#2 @ 3,1: 4x5"];
+var elfList = ["#1 @ 1,3: 4x4","#2 @ 3,1: 4x4","#3 @ 5,5: 2x2"]
+
+
 //var elf = elfList[0];
 var y = [];
+var duplicatesRemoved = [];
+var counter = 0;
+var count = 0;
 
 function removeExtraValues(elf){
 //Remove extra values and collect the cordinates as well as the inch input
@@ -19,10 +24,10 @@ firstInch = findX[0];//holds the initial sq inch number
 secondInch = findX[1];//holds the second sq inch number  
   
 //document.write(elf);
-document.write("<br> xCord: " + xCord );
-document.write("<br> yCord: " + yCord );
-document.write("<br> first inch number: " + firstInch );
-document.write("<br> second inch number: " + secondInch ); 
+//document.write("<br> xCord: " + xCord );
+//document.write("<br> yCord: " + yCord );
+//document.write("<br> first inch number: " + firstInch );
+//document.write("<br> second inch number: " + secondInch ); 
 
 xCordinate = parseInt(xCord);
 yCordinate = parseInt(yCord); 
@@ -34,22 +39,45 @@ showElfInchList();
 
 }
 
-
 function showElfInchList(){
 var t = firstInchCord+xCordinate;  
 for (p = 0; p < secondInchCord; p++){
-  document.write("<br>"); 
+  //document.write("<br>"); 
   for (l = xCordinate; l < t; l++){
-    document.write(l + "," + yCordinate +" "); 
+    //document.write(l + "," + yCordinate +" "); 
     y.push(l+","+yCordinate);
   } yCordinate++;
 }
 }
-
 
 for (i = 0; i < elfList.length; i++){
 removeExtraValues(elfList[i]);
 }
 
 
-document.write("<br>" + y[1]);
+//begin
+ for (i = 0; i < y.length; i++){
+   if (duplicatesRemoved.includes(y[i]) === false){
+     duplicatesRemoved.push(y[i]);
+   }
+ }
+
+
+for (l = 0; l < duplicatesRemoved.length; l++){
+  
+  for (i = 0; i < y.length; i++) {
+    if (duplicatesRemoved[l] === y[i]){
+    counter++;  
+    }
+    //document.write("<br>" + duplicatesRemoved[l] + " " + y[i]);
+  }
+  if (counter >= 2){
+    count++;
+  }
+  counter = 0;
+ 
+}
+
+
+
+document.write("<br>"+count)
