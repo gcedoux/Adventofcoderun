@@ -70,7 +70,7 @@ for (l = 0; l < duplicatesRemoved.length; l++){
     counter++;  
     }
     //document.write("<br>" + duplicatesRemoved[l] + " " + y[i]);
-  }
+  }y.shift();
   if (counter >= 2){
     count++;
   }
@@ -79,5 +79,6 @@ for (l = 0; l < duplicatesRemoved.length; l++){
 }
 
 
-
+//document.write("<br> <br>" + y.length + " " + y);
+//document.write("<br>"+duplicatesRemoved.length + " " + duplicatesRemoved);
 document.write("<br>"+count)
