@@ -102,4 +102,3 @@ if (elfTotalTwo[i][sa] === cordTotal[ia]){
   }
 }
 
-document.write("<br>"+elfTotalTwo)
